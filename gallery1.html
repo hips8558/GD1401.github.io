@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">        <!-- This is English language --->
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    <meta charset="utf-8">  <!-- It includes ALL the character set of English-->
+                            <!-- AA, BB, aa, bb, 1, 2, !, @, # etc. -->
+
+    <!-- For a Responsive website - you need to input the below mentioned code -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- You need to copy paste few CDM codes -->
+
+    <!-- Latest compiled and minified CSS -->
+   
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- to make my carasoul images responsive -->
+<style>
+  
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+    p
+    {
+  font-family:'Dancing Script', cursive;
+  text-align: center;
+  font-size: 150%;
+}
+    h3 
+    {
+  font-family:'Dancing Script', cursive;
+  text-align: center;
+  font-size: 300%;
+}
+   h2
+    {
+  font-family:'Dancing Script', cursive;
+  text-align: center;
+  font-size: 350%;
+}
+   h1
+    {
+  font-family:'Dancing Script', cursive;
+  text-align: center;
+  font-size: 400%;
+  video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+ #more {display: none;}
+ 
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+ 
+  </style>
+  <script>
+    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+  </script>
+
+</head>
+
+<!-- Almost done -- Lets start the program -->
+
+<!--- ----------------------------------------------------------------------------- -->
+<body>
+  
+  <!-- Navbar codes -->
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="code day2.html">Home</a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">  <!-- will do a small styling inorder to move your nav elements to right side of the navbar -->
+    <!-- ML stands for margin left, MR - Margin right -->
+    <!-- The code works opposite here, if you wanna move things to right, use ML and if you wanna move things to left, use MR -->
+
+    <li class="nav-item">
+      <a class="nav-link" href="code day2.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="aboutus.html">About us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="gallery1.html">Gallery</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="contactus.html">Contact us</a>
+    </li>
+  </ul>
+
+  <!-- I need a Search input form -->
+   <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+</nav>
+
+<section>
+  <h1 style="text-align: center;">Gallery</h1>
+  <br>
+  <div class="container">
+
+    <div class="row">
+      <div class="col">
+        <img src="C:\Users\Admin\Desktop\GD1401\images\V1.jpg" width="400" height="450">
+      </div>
+           <div class="col">
+          <br>
+      <h3>Gallery</h3>
+      <br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+
+<button onclick="myFunction()" id="myBtn"type="button" class="btn btn-dark">Read more</button>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+      <!--col 1-->
+
+      <div class="col">
+        <img src="C:\Users\Admin\Desktop\GD1401\images\1.jpg" width="330" height="450">
+        <h3>lorem ipsum</h3>
+        <p>“I’m a graphic designer…”</p>
+      </div>
+      <!--col 2-->
+      <div class="col">
+        <img src="C:\Users\Admin\Desktop\GD1401\images\2.jpg" width="330" height="450">
+        <h3>lorem ipsum</h3>
+        <p>“I’m a graphic designer…”</p>
+      </div>
+      <!--col 3-->
+      <div class="col">
+        <img src="C:\Users\Admin\Desktop\GD1401\images\3.jpeg" width="330" height="450">
+        <h3>lorem ipsum</h3>
+        <p> “I’m a graphic designer…”</p>
+      </div>
+
+  </div>
+  <div class="row">
+    <!--col 1-->
+
+      <div class="col">
+        <img src="C:\Users\Admin\Desktop\GD1401\images\4.png" width="330" height="450">
+        <h3>lorem ipsum</h3>
+        <p>“I’m a graphic designer…”</p>
+      </div>
+      <!--col 2-->
+      <div class="col">
+        <img src="C:\Users\Admin\Desktop\GD1401\images\5.jpg" width="330" height="450">
+        <h3>lorem ipsum</h3>
+        <p>“I’m a graphic designer…”</p>
+      </div>
+      <!--col 3-->
+      <div class="col">
+        <img src="C:\Users\Admin\Desktop\GD1401\images\6.jpg" width="330" height="450">
+        <h3>lorem ipsum</h3>
+        <p>“I’m a graphic designer…”</p>
+      </div>
+  </div> <!--i am closing the second row R2-->
+  </div>
+</section>
